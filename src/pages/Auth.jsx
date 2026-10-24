@@ -24,10 +24,6 @@ export function Login() {
         withCredentials: true,
       });
       if (response.status === 200) {
-        sessionStorage.setItem(
-          "userData",
-          JSON.stringify(response.data.userData),
-        );
         navigate("/user/dashboard");
       }
     } catch (error) {
