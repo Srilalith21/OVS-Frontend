@@ -85,7 +85,10 @@ export function Login() {
             >
               Login
             </button>
-            <button className="flex-1 rounded-lg border border-slate-300 px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200">
+            <button
+              className="flex-1 rounded-lg border border-slate-300 px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-200"
+              onClick={() => navigate("/admin/login")}
+            >
               Admin
             </button>
           </div>
